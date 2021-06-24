@@ -1,0 +1,132 @@
+.question-wrapper {
+    max-width: 80%;
+    margin: 0 auto;
+    text-align: center;
+    top: 58%;
+    position: relative;
+    transform: translateY(-50%);
+}
+
+.questions-progress {
+    margin: 50px 0;
+}
+
+.choice-button {
+    background: #424A9E;
+    border: 2px solid #4953BE;
+    color: #fff;
+    text-transform: uppercase;
+    font-weight: bold;
+    width: 400px;
+    height: 70px;
+    border-radius: 14px;
+    margin-bottom: 30px;
+}
+
+.choice-button-variant {
+    border: 2px solid #4953BE;
+    background-color: #fff;
+    color: #4953BE;
+    border-radius: 14px;
+    font-weight: bold;
+    width: 400px;
+    height: 70px;
+    text-transform: uppercase;
+    margin-bottom: 30px;
+}
+
+.question,
+.level-title,
+.category-title,
+.questions-number {
+    color: #4953BE;
+}
+
+.level-title {
+    letter-spacing: 0.5em;
+    font-size: 20px;
+}
+
+.category-title {
+    font-size: 65px;
+    margin: 0 auto;
+    width: 50%;
+    letter-spacing: 0.3rem;
+}
+
+.question {
+    font-size: 30px;
+}
+
+.question-index {
+    color: #FF7878;
+    font-size: 25px;
+}
+
+.answers-block {
+    display: flex;
+    align-items: center;
+    flex-flow: column;
+    padding: 20px;
+    margin-top: 75px;
+}
+
+.question-striped-spot {
+    position: absolute;
+    bottom: 0;
+    width: auto;
+}
+
+.question-elipse-left {
+    position: absolute;
+    top: 0;
+    height: 255px;
+    width: auto;
+}
+
+.question-pink-spot {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    width: auto;
+}
+
+.question-elipse-right {
+    position: absolute;
+    right: 0;
+    top: 5%;
+    height: 365px;
+    width: auto;
+}
+
+@media(max-width: 480px) {
+    .category-title {
+        font-size: 30px;
+        width: 100%;
+    }
+
+    .question {
+        font-size: 25px;
+    }
+
+    .question-elipse-left {
+        height: 140px;
+    }
+
+    .question-striped-spot {
+        height: 140px;
+    }
+
+    .question-elipse-right {
+        height: 210px;
+    }
+
+    .question-pink-spot {
+        height: 65px;
+    }
+
+    .choice-button,
+    .choice-button-variant {
+        width: 340px;
+    }
+}

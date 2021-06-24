@@ -1,4 +1,4 @@
-# Installation
+# Trivia Quiz
 
 ## Installation:
 

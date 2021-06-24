@@ -1,0 +1,151 @@
+.welcome-page {
+    background-color: #4751C0;
+    width: 100%;
+    height: 100%;
+}
+
+.welcome-page__title {
+    color: #fff;
+    font-size: 45px;
+    font-weight: 700;
+    margin: 0;
+}
+
+.welcome-page__settings {
+    max-width: 80%;
+    margin: 0 auto;
+    text-align: center;
+    top: 50%;
+    position: relative;
+    transform: translateY(-50%);
+}
+
+.welcome-page__logo {
+    width: 550px;
+    height: auto;
+    margin-bottom: 60px;
+}
+
+.amount__wrapper {
+    margin-bottom: 50px;
+    margin-top: 20px;
+}
+
+.level__title,
+.amount__title {
+    color: #F7A491;
+    font-size: 15px;
+    margin-left: 10px;
+}
+
+.level,
+.amount__header {
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    width: 400px;
+    margin: 10px auto;
+}
+
+.amount__field {
+    box-shadow: 6px 6px 13px -1px #17155C0F;
+    border-radius: 10px;
+    border: 1px solid #FFFFFF;
+    width: 350px;
+    height: 10px;
+    padding: 25px;
+    background: none;
+    outline: none;
+    color: #fff;
+    font-size: 18px;
+}
+
+.striped-circle {
+    position: absolute;
+    bottom: 0;
+    height: 230px;
+ 
+}
+
+.start-spot-left {
+    position: absolute;
+    top: 7%;
+    width: 130px;
+    height: auto;
+}
+
+.striped-pink-right {
+    position: absolute;
+    top: 5%;
+    right: 0;
+    height: 360px;
+    width: auto;
+}
+
+.start-spot-right {
+    position: absolute;
+    width: auto;
+    height: 400px;
+    bottom: 2%;
+    right: 0;
+}
+
+.level__field {
+    background-color: #4751C0;
+    border-radius: 10px;
+    color: white;
+    padding: 21px;
+    width: 400px;
+    border: 1px solid #FFFFFF;
+    font-size: 18px;
+    box-shadow: 6px 6px 13px -1px #17155C0F;
+    -webkit-appearance: none;
+    appearance: none;
+    background-image: url('data:image/svg+xml,%3Csvg width="22" height="15" viewBox="0 0 22 15" fill="none" xmlns="http://www.w3.org/2000/svg"%3E%3Cpath fill-rule="evenodd" clip-rule="evenodd" d="M10.8632 6.8904C9.50824 5.67141 7.31947 3.43659 5.86029 2.01444C4.40111 0.693866 3.46306 1.81127 1.6912 3.63976C-0.289112 5.56982 1.6912 6.58565 4.50534 9.32837L9.61246 14.3059C11.4886 15.9312 13.052 13.4933 15.5534 11.1569L18.8145 8.04464C22.0456 4.99717 22.7752 4.99717 20.1695 2.55919C17.8765 0.222791 17.9807 0.222791 14.3328 3.87976C12.6651 5.4035 11.3843 6.58565 10.8632 6.8904Z" fill="white"/%3E%3C/svg%3E%0A');
+    background-repeat: no-repeat;
+    background-size: 18px;
+    background-position: 95%;
+    outline: none;
+}
+
+@media(max-width: 480px) {
+    .welcome-page__logo {
+        width: 360px;
+        height: auto;
+        margin-bottom: 30px;
+    }
+
+    .level,
+    .amount__header {
+        width: 320px;
+    }
+
+    .welcome-page__title {
+        font-size: 28px;
+    }
+
+    .level__field {
+        width: 320px;
+    }
+
+    .amount__field {
+        width: 270px;
+    }
+
+    .striped-circle {
+        height: 84px;
+    }
+
+    .start-spot-left {
+        height: 290px;
+        width: auto;
+    }
+
+    .striped-pink-right {
+        height: 215px;
+    }
+
+    .start-spot-right {
+        height: 225px;
+    }
+}

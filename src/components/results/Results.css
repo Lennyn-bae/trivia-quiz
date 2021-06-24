@@ -1,0 +1,145 @@
+.results {
+    background: #4751C0;
+    position: relative;
+}
+
+.results__stars {
+    display: flex;
+    justify-content: center;
+}
+
+.results__title {
+    color: #fff;
+    margin-left: 10px;
+}
+
+.results__score {
+    color: #FF7878;
+    font-size: 23px;
+}
+
+.correct-answer {
+    padding: 15px;
+    width: 500px;
+    min-height: 55px;
+    background-image: url('data:image/svg+xml,%3Csvg width="20" height="15" viewBox="0 0 20 15" fill="none" xmlns="http://www.w3.org/2000/svg"%3E%3Cpath fill-rule="evenodd" clip-rule="evenodd" d="M7.17128 9.28108C6.19693 8.4034 4.62299 6.79434 3.57369 5.77039C2.52439 4.81957 1.84984 5.62411 0.575696 6.94062C-0.84835 8.33026 0.575696 9.06166 2.59934 11.0364L6.27188 14.6202C7.62098 15.7905 8.74523 14.0351 10.544 12.3529L17.8891 5.11213C20.2126 2.91795 20.7372 2.91795 18.8635 1.16261C17.2146 -0.5196 17.2895 -0.5196 14.6663 2.11342C13.4671 3.21051 7.54603 9.06166 7.17128 9.28108Z" fill="%23FF7C7C"/%3E%3C/svg%3E%0A');
+    background-repeat: no-repeat;
+    background-position: 95% 40%;
+    border-radius: 14px;
+    background-color: #FFFBFA;
+    list-style-type: none;
+    margin: 10px 0;
+}
+
+.wrong-answer {
+    padding: 15px;
+    width: 500px;
+    min-height: 55px;
+    border-radius: 14px;
+    background-image: url('data:image/svg+xml,%3Csvg width="15" height="16" viewBox="0 0 15 16" fill="none" xmlns="http://www.w3.org/2000/svg"%3E%3Cpath d="M3.14303 15.432L7.49457 11.0174L11.8488 15.432C13.5517 17.1586 16.1599 14.5606 14.4328 12.8095L10.0812 8.39754L14.4328 3.98287C16.133 2.26181 13.5463 -0.360769 11.8488 1.36303L7.49457 5.77496L3.14303 1.36303C1.44284 -0.360769 -1.14114 2.26181 0.556361 3.98287L4.91059 8.39754L0.556361 12.8095C-1.14114 14.5333 1.44284 17.1558 3.14303 15.432Z" fill="%234953BE"/%3E%3C/svg%3E%0A');
+    background-repeat: no-repeat;
+    background-position: 95% 40%;
+    background-color: #FFDBDB;
+    list-style-type: none;
+    margin: 10px 0;
+}
+
+.answered-question {
+    color: #464FAC;
+    margin: 0;
+    height: 100%;
+    width: 90%;
+    margin-right: 25px;
+    text-align: left;
+    display: inline-block;
+}
+
+.results-spot-left {
+    position: absolute;
+    width: auto;
+}
+.results-striped-spot {
+    position: absolute;
+    bottom: 0;
+    height: 300px;
+    width: auto;
+}
+
+.results-striped-pink {
+    position: absolute;
+    right: 0;
+    width: auto;
+}
+
+.results-right {
+    position: absolute;
+    width: auto;
+    right: 0;
+    bottom: 0;
+}
+
+.results__details {
+    width: 70%;
+    margin: 0 auto;
+    text-align: center;
+    padding: 40px 0;
+}
+
+.results__grade {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 10px;
+}
+
+.questions-list {
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+    padding: 0;
+}
+
+.profile-icon {
+    background-color: #fff;
+    width: 52px;
+    height: 52px;
+    border-radius: 50%;
+    background-image: url("data:image/svg+xml,%3Csvg width='52' height='52' viewBox='0 0 52 52' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cmask id='mask0' mask-type='alpha' maskUnits='userSpaceOnUse' x='0' y='0' width='52' height='52'%3E%3Ccircle cx='26' cy='26' r='26' fill='%23FFFBFA'/%3E%3C/mask%3E%3Cg mask='url(%23mask0)'%3E%3Cpath d='M12.5095 17.9875C13.7301 10.0912 20.8663 4.41956 28.3154 8.2424C30.0056 9.08844 32.2591 10.8432 33.4171 12.3473C36.547 16.3581 37.3608 21.3403 40.5846 25.2572C39.3952 26.1659 37.9555 27.1059 36.234 28.0147L34.2309 25.3199L34.9195 28.6727C29.9117 31.0855 22.8381 33.0596 13.1668 32.9969C11.9774 27.5133 11.8835 22.1864 12.5095 17.9875Z' fill='%230E2E35'/%3E%3Cpath d='M27.3454 25.7896C27.3454 25.7896 27.3767 26.009 27.4393 26.385C27.7523 28.1397 29.0042 33.968 29.8493 35.5661C30.8821 37.5088 26.3438 43.6818 22.0246 42.9297C20.7413 42.7104 23.12 37.2581 22.9948 36.6941C22.7757 35.5974 22.4627 34.0933 22.1811 32.5266C22.0246 31.6492 21.8368 30.7718 21.6803 29.9258C21.2108 27.5757 20.8352 25.6329 20.8352 25.6329L27.3454 25.7896Z' fill='%23F8B2A2'/%3E%3Cpath d='M22.9631 10.937C22.9631 10.937 26.0304 10.5923 27.9709 13.0678C29.9114 15.5432 31.9772 23.2829 27.1884 27.4818C22.3997 31.6806 17.6736 26.9178 16.985 21.9042C16.2651 16.8593 16.0147 10.749 22.9631 10.937Z' fill='%23F8B2A2'/%3E%3Cpath d='M22.6189 10.1225C22.6189 10.1225 26.7191 17.4548 29.6611 17.7995C32.6032 18.1442 32.9788 22.0297 32.9788 22.0297C32.9788 22.0297 31.9147 13.0366 29.0352 11.3132C26.1244 9.55847 22.6189 10.1225 22.6189 10.1225Z' fill='%230E2E35'/%3E%3Cpath fill-rule='evenodd' clip-rule='evenodd' d='M42.3377 39.922C45.0294 43.8075 50.2563 56.1847 50.2563 56.1847L37.5176 58.1275C37.5176 58.1275 36.9378 56.6021 36.1222 54.3944C35.0437 58.9846 33.3937 64.3733 32.0453 68.777C30.8862 72.5624 29.95 75.6199 29.7912 76.8167C29.2591 80.8275 32.4516 91.4814 32.4516 91.4814C32.4516 91.4814 15.3624 94.9282 10.4485 91.7007C10.4485 91.7007 9.97812 66.2147 10.3642 60.7989C9.60452 60.5167 8.86955 60.2618 8.19031 60.07C9.00408 56.2785 10.3186 52.1423 11.2889 49.1969C15.2326 37.1956 19.6457 37.697 19.6457 37.697L18.8967 43.2349C22.003 42.5376 26.5361 42.0351 26.5361 42.0351C26.5361 42.0351 29.1949 41.8637 31.9355 42.4246C31.5164 41.0905 31.1953 39.9619 31.0388 39.2013C30.1624 34.9711 38.9574 35.0964 42.3377 39.922Z' fill='%23B5BBF5'/%3E%3C/g%3E%3C/svg%3E%0A");
+}
+
+.close-button {
+    position: absolute;
+    top: 4%;
+    right: 11%;
+}
+
+@media(max-width: 480px) {
+    .correct-answer,
+    .wrong-answer {
+        width: 320px;
+    }
+
+    .results-striped-pink {
+        height: 176px;
+    }
+
+    .results-right {
+        height: 330px;
+        bottom: 7%;
+    }
+    
+    .results-striped-spot {
+        height: 172px;
+    }
+
+    .results-spot-left {
+        height: 278px;
+        top: 7%;
+    }
+
+    .close-button {
+        top: 3%;
+        width: 18px;
+        right: 6%;
+    }
+}

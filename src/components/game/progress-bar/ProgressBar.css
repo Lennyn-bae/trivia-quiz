@@ -1,0 +1,13 @@
+.container {
+    height: 5px;
+    width: 300px;
+    background: #DBDEFF;
+    border-radius: 20px;
+    margin: 0 auto;
+}
+
+.label {
+    padding: 5;
+    color: linear-gradient(180deg, #FF7878 0%, #FF7878 100%);
+    font-weight: bold;
+}
