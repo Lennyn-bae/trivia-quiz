@@ -1,15 +1,16 @@
 import React, { ChangeEvent } from 'react'
 import StartButton from './start-button/StartButton'
+import DifficultyLevel from './difficulty-level/DifficultyLevel'
+import QuestionsAmount from './questions-amount/QuestionsAmount'
 import { ReactComponent as TitleLogo } from '../../assets/title.svg'
-import { ReactComponent as DifficultyIcon } from '../../assets/difficulty.svg'
 import { ReactComponent as StripedCircle } from '../../assets/striped_circle_left.svg'
 import { ReactComponent as StripedPinkCircle } from '../../assets/striped_pink_right.svg'
 import { ReactComponent as StartSpot } from '../../assets/start_spot_left.svg'
 import { ReactComponent as StartSpotRight } from '../../assets/start_spot_right.svg'
-import { ReactComponent as AmountIcon } from '../../assets/amount.svg'
 import { useSelector, useDispatch, RootStateOrAny } from 'react-redux'
 import { IProps } from './IMain'
 import './Main.css'
+
 
 const Main: React.FC<IProps> = (props) => {
   const {
@@ -17,7 +18,6 @@ const Main: React.FC<IProps> = (props) => {
   } = props
 
   const startQuiz = () => begin(true)
-  const options = ['easy', 'hard']
   const questionDifficulty = useSelector((state: RootStateOrAny) => state.options.question_difficulty)
   const questionAmount = useSelector((state: RootStateOrAny) => state.options.amount_of_questions)
 
@@ -58,35 +58,13 @@ const Main: React.FC<IProps> = (props) => {
 
   return (
     <div className='welcome-page'>
-      <div className='welcome-page__settings'>
-        <h1 className='welcome-page__title'>Welcome to the</h1>
+      <h1 className='welcome-page__title'>
+        <span className='welcome-page__title-name'>Welcome to the</span>
         <TitleLogo className='welcome-page__logo' />
-        <div>
-
-          <div className='level'>
-            <DifficultyIcon />
-            <p className='level__title'>Difficulty:</p>
-          </div>
-
-          <select value={questionDifficulty} onChange={handleDifficultyChange} className='level__field'>
-            {
-              options.map((option: any, index: number) => (
-                <option key={index} value={option}>
-                  {option}
-                </option>
-              )
-              )}
-          </select>
-        </div>
-
-        <div className='amount__wrapper'>
-          <div className='amount__header'>
-            <AmountIcon />
-            <p className='amount__title'>Amount</p>
-          </div>
-
-          <input value={questionAmount} onChange={handleAmountChange} className='amount__field' />
-        </div>
+      </h1>
+      <div className='welcome-page__settings'>
+        <DifficultyLevel questionDifficulty={questionDifficulty} handleDifficultyChange={handleDifficultyChange} />
+        <QuestionsAmount questionAmount={questionAmount} handleAmountChange={handleAmountChange} />
         <StartButton handleQuery={handleQuery}>True</StartButton>
       </div>
 

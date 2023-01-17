@@ -30,18 +30,17 @@ const Results: React.FC = () => {
           <div className='profile-icon' ></div>
           <p className='results__title'>You scored <span className='results__score'>{score}</span> / <span>{questions.length}</span></p>
         </div>
-        <div className='results__stars'>
+        <div className='results__stars'> 
           {
             numberOfQuestions.map((index: number, i: number) => (
               <StarGrades
                 index={index}
                 key={i}
-                className={correct[i] ? 'right-answer' : ''}
+                className={correct[i] && 'right-answer'}
               />
             ))
           }
         </div>
-
 
         <ul className='questions-list'>
           {questions.map((option: any, i: number) => (

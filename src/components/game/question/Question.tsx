@@ -83,7 +83,7 @@ const Question: React.FC = () => {
             <p className='question'>{decodeHTML(question.question)}</p>
             <div className='answers-block'>
               {selectedAnswers.map((option, i: number) => (
-                <button key={i} onClick={handleListItemClick} className={i === 0 ? 'choice-button' : 'choice-button-variant'}>
+                <button key={i} onClick={handleListItemClick} className={i === 0 ? 'choice-button' : 'choice-button choice-button--variant'}>
                   {option}
                 </button>
               ))}

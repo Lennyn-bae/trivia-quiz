@@ -1,0 +1,31 @@
+.amount__wrapper {
+    margin-bottom: 40px;
+    margin-top: 20px;
+}
+
+.amount__title {
+    color: #F7A491;
+    font-size: 15px;
+    margin-left: 10px;
+}
+
+.amount__header {
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    width: 400px;
+    margin: 10px auto;
+}
+
+.amount__field {
+    box-shadow: 6px 6px 13px -1px #17155C0F;
+    border-radius: 10px;
+    border: 1px solid #FFFFFF;
+    width: 358px;
+    height: 10px;
+    padding: 20px;
+    background: none;
+    outline: none;
+    color: #fff;
+    font-size: 18px;
+}
