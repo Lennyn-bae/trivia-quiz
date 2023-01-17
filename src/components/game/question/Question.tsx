@@ -73,17 +73,17 @@ const Question: React.FC = () => {
         <>
           <Elipse className='question-elipse-left' />
           <StripedSpot className='question-striped-spot' />
-          <div className='question-wrapper'>
-            <h3 className='category-title'>{category}</h3>
-            <p className='level-title'>level {questionDifficulty === 'easy' ? 1 : 2}</p>
-            <div className='questions-progress'>
-              <p><span className='question-index'>{questionIndex}</span> / <span className='questions-number'>{questions.length}</span></p>
+          <div className='question'>
+            <h3 className='question__category-title'>{category}</h3>
+            <p className='question__level-title'>level {questionDifficulty === 'easy' ? 1 : 2}</p>
+            <div className='questions__progress'>
+              <p><span className='question__index'>{questionIndex}</span> / <span className='questions__number'>{questions.length}</span></p>
               <ProgressBar completed={completed}></ProgressBar>
             </div>
-            <p className='question'>{decodeHTML(question.question)}</p>
+            <p className='question__text'>{decodeHTML(question.question)}</p>
             <div className='answers-block'>
               {selectedAnswers.map((option, i: number) => (
-                <button key={i} onClick={handleListItemClick} className={i === 0 ? 'choice-button' : 'choice-button-variant'}>
+                <button key={i} onClick={handleListItemClick} className={i === 0 ? 'choice-button' : 'choice-button choice-button--variant'}>
                   {option}
                 </button>
               ))}
